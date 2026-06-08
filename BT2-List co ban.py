@@ -1,14 +1,18 @@
 import math
-list = input("Liệt kê 5 bộ phim yêu thích của bạn từ top 1 đến top 5 " \
-"\nVui lòng nhập dưới dạng A,B,C,D,E" \
-"\nVới A,B,C,D,E lần lượt là tên các phim từ thích nhất đến ít thích nhất ")
+list = input("Liệt kê 5 học sinh trong lớp của bạn " \
+"\nVui lòng nhập dưới dạng A,B,C,D,E ")
 
-usable_list = list.split(",")
+hoc_sinh = list.split(",")
 
-print(usable_list)
+list2 = input("Nhập lần lượt điểm của 5 học sinh đó với cú pháp tương tự: ")
+diem_so = list2.split(",")
 
-print("Phim bạn thích nhất là: " + usable_list[0])
+hoc_sinh.extend(diem_so)
+print(f"Các học sinh bạn nhập là: {hoc_sinh}, với phần sau là điểm tương ứng")
 
-print(f"Phim từ top 2 đến top 4 là: {usable_list[1:4]}")
+list_moi = input("Nhập thêm 1 học sinh nữa:")
+hoc_sinh.append(list_moi)
 
-print(f"Phim dưới top 2 là: {usable_list[2:]}")
+print(hoc_sinh)
+
+print(f"Số điểm 8 trong list điểm là: {diem_so.count("8")}")
