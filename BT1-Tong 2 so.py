@@ -2,11 +2,22 @@
 import math
 
 #Input
-num1 = float(input("Enter a number: "))
-num2 = float(input("Enter another number: "))
+a = float(input("Enter the first number: "))
 
+toan_tu = input("Vui lòng chọn toán tử: \nViết không dấu, viết hoa chữ đầu tiên ")
 
-def tinh_tong(num1,num2):
-    return num1 + num2
+b = float(input("Enter the second number: "))
 
-print(f"Tổng hai số đã cho là: {tinh_tong(num1,num2)}")
+def tinh_toan(a,b):
+    if toan_tu == "Cong":
+        return a + b
+    elif toan_tu == "Tru":
+        return a - b
+    elif toan_tu == "Nhan":
+        return a * b
+    elif toan_tu == "Chia": 
+        return a/b
+    else: return print("Toán tử không hợp lệ")
+
+result = tinh_toan(a,b)
+print(f"Kết quả: {result}")
