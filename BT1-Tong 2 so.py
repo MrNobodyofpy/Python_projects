@@ -6,8 +6,7 @@ num1 = float(input("Enter a number: "))
 num2 = float(input("Enter another number: "))
 
 
-def tinh_tong(so1,so2):
-    sum = num1 + num2
-    print(f"Tổng 2 số vừa nhập là: {sum}")
+def tinh_tong(num1,num2):
+    return num1 + num2
 
-tinh_tong(num1,num2)
+print(f"Tổng hai số đã cho là: {tinh_tong(num1,num2)}")
