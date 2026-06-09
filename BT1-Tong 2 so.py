@@ -4,18 +4,18 @@ import math
 #Input
 a = float(input("Enter the first number: "))
 
-toan_tu = input("Vui lòng chọn toán tử: \nViết không dấu, viết hoa chữ đầu tiên ")
+toan_tu = input("Vui lòng chọn toán tử: \nViết '+','-','x' hoặc ':' ")
 
 b = float(input("Enter the second number: "))
 
 def tinh_toan(a,b):
-    if toan_tu == "Cong":
+    if toan_tu == "+":
         return a + b
-    elif toan_tu == "Tru":
+    elif toan_tu == "-":
         return a - b
-    elif toan_tu == "Nhan":
+    elif toan_tu == "x":
         return a * b
-    elif toan_tu == "Chia": 
+    elif toan_tu == ":": 
         return a/b
     else: return print("Toán tử không hợp lệ")
 
