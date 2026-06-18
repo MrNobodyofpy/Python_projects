@@ -1,4 +1,5 @@
-a,b,c = map(float,input().split())
-if a < b + c and b < a + c and c < a + b:
-    print("YES")
-else: print("NO")
+x,a,b,c,d = map(int,input().split())
+if x <= 50: print(x*a)
+elif 51 <= x <= 100: print(50*a + (x-50)*b)
+elif 101 <= x <= 150: print(50*a + 50*b + (x-100)*c)
+else: print(50*a + 50*b + 50*c +(x-150)*d)
